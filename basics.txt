@@ -1,0 +1,142 @@
+git configure
+
+git init
+
+ls -a (show hidden files)
+see .git file
+
+git status => for check branch, staging area, untracked files
+
+
+Git workflow
+
+working directory ==add==> staging area ==commit==> git reposotory
+at staging area, we have option to remove file
+after commited, it saved permanently
+
+
+git ls-files => to check staging area files
+git add file1.txt file2.txt
+git add . (add all)
+
+git rm --cached file2.txt => to remove from staging area
+
+git commit -m "message"
+
+git log (to display all previous commit)
+
+git log --oneline
+
+git branch (check how many branch)
+
+git brach newBranch (to create new branch)
+
+git switch newBranch (to switch brnach)
+
+
+git log --oneline
+now, HEAD -> newBranch (head pointing to new branch after switch)
+
+
+
+git switch master
+git merge newBranch  (need to be on master branch for merging)
+
+git log --oneline
+now, HEAD -> master, newBranch (both branch have same version now)
+
+
+
+
+-----------------------------------------------
+
+
+git init – initialize the git repository
+git clone - git clone https://  
+ls – To see all files
+git status – List the files you've changes and those you still need to add or commit
+git add index.html – To add to the staging area
+git commit -m “Any Commit message” – to send the staged files to commit
+git add -A – To add all the untracked files to staging area
+git checkout -f – All files get matched to the previous files
+git rm --cached index.html -- to remove files from staging area (unstage)
+git commit -am "mesasges" -- git add + commit
+
+fetch + merge = pull
+
+git branch – shows all branch
+git branch  pankajbranch – Create a new branch named pankajbranch
+git checkout pankajbranch    Switch to this branch
+git checkout master -- To delete this pankajbranch, we have to again switch to master branch
+git branch -d pankajbranch – Delete this branch
+git checkout master -- merge new branch to master branch, we first switch to master branch
+git merge pankajbranch
+git remote -v
+git push origin dev
+
+
+GITHUB COMMANDS
+echo "# Learning_Git" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/pankaj846/Learning_Git.git
+git push -u origin main(branch name)
+Notepad
+
+git init -> initialise a git repo for new or existing project
+git clone -> git clone https://   
+git status -> List the files you've changes and those you still need to add or commit
+git diff index.html -> show which line changes
+git rm --cached index.html -> to remove files from staging area (unstage)
+git commit -am "mesasges" -> git add + commit
+
+
+git remote -v
+git push origin dev
+
+
+
+echo "# Learning_Git" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/pankaj846/Learning_Git.git
+git push -u origin main(branch name)
+
+
+
+stage and unstage
+to commit any code, we should be on stage
+if we git commit on unstage, then it show error
+
+git add index.html (add file to staging area)
+again run git status -> show green index.html means it comes into stage area
+git add -A (To add all the untracked files to staging area)
+git checkout contact.html – To match the file with last commit 
+git checkout -f – matches the file with last commit 
+
+git commit -m "messages"
+
+git log -> show all commit
+git log -5 -> show last 5 commit
+
+
+
+git branch -> check current branch
+git branch  pankajbranch -> create a new branch
+git checkout pankajbranch -> switch to branch
+
+to delete this pankajbranch, we have to again shift to master branch
+git checkout master -> shift to master branch
+git branch -d pankajbranch
+
+
+
+merge new branch to master branch
+we first shift to master branch
+
+git checkout master
+git merge pankajbranch

@@ -149,3 +149,6 @@ git merge pankajbranch
 
 
 git basics
+
+changes before merge newFile branch
+

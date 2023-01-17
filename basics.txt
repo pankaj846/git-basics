@@ -149,7 +149,6 @@ git basics
 
 
 
-
 git basics
 <<<<<<< HEAD
 
@@ -157,3 +156,5 @@ changes before merge newFile branch
 
 =======
 >>>>>>> 0b5bfcbb5f5dc1c7e6fd50e0b8a93643484b0f18
+
+changes on addNewFile brnahc
